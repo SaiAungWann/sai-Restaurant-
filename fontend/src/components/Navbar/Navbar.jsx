@@ -3,11 +3,15 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/food-logo.png'
 import {FaShoppingCart} from 'react-icons/fa'
+import ThemeBtn from './ThemeBtn'
+import useTheme from '../../hooks/useTheme'
 export default function Navbar() {
+
+  let {isDark} = useTheme();
   return (
    <>
    {/*  dark:bg-gray-800 dark:text-white */}
-      <div className=" shadow-md bg-white text-black duration-200">
+      <div className={` shadow-md bg-white text-black duration-200 ${ isDark ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
         <div className="container">
           <div className="flex justify-between items-center">
             <div className='p-2'>
@@ -18,7 +22,8 @@ export default function Navbar() {
             </div>
             <div className="space-x-4 flex justify-between items-center">
               <ul className="hidden sm:flex space-x-4 text-l items-center">
-                <li className="hover:text-primary"><NavLink to="/" >Home</NavLink></li>
+                <li className="hover:text-primary"><ThemeBtn /></li>    
+                <li className="hover:text-primary"><NavLink to="/" >Home</NavLink></li>    
                 <li className="hover:text-primary"><NavLink to="/about">About</NavLink></li>
                 <li className="hover:text-primary"><NavLink to="/contact">Contact</NavLink></li>
               </ul>

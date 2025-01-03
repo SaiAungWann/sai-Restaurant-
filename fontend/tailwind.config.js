@@ -18,11 +18,6 @@ export default {
           default: "10px",
         },
       },
-      navbar: {
-        hover: {
-          text: "primary",
-        },
-      },
     },
   },
   plugins: [],
