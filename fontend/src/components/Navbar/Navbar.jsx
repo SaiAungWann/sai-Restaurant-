@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
    <>
    {/*  dark:bg-gray-800 dark:text-white */}
-      <div className={` shadow-md bg-white text-black duration-200 ${ isDark ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+      <div className={` shadow-md bg-white text-black duration-200 ${ isDark ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
         <div className="container">
           <div className="flex justify-between items-center">
             <div className='p-2'>
@@ -21,11 +21,11 @@ export default function Navbar() {
               </NavLink>
             </div>
             <div className="space-x-4 flex justify-between items-center">
-              <ul className="hidden sm:flex space-x-4 text-l items-center">
+              <ul className="sm:flex space-x-4 text-l items-center">
                 <li className="hover:text-primary"><ThemeBtn /></li>    
-                <li className="hover:text-primary"><NavLink to="/" >Home</NavLink></li>    
-                <li className="hover:text-primary"><NavLink to="/about">About</NavLink></li>
-                <li className="hover:text-primary"><NavLink to="/contact">Contact</NavLink></li>
+                <li className="hover:text-primary hidden sm:block"><NavLink to="/" >Home</NavLink></li>    
+                <li className="hover:text-primary hidden sm:block"><NavLink to="/about">About</NavLink></li>
+                <li className="hover:text-primary hidden sm:block"><NavLink to="/contact">Contact</NavLink></li>
               </ul>
               <button className='bg-gradient-to-r from-primary to-secondary rounded-lg text-white gap-2 flex justify-between items-center py-1 px-4 hover:scale-105'>
                 Order 

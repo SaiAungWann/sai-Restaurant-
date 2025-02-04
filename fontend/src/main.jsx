@@ -5,8 +5,6 @@ import  Route  from './routers/router'
 import { ThemeContextProvider } from './contexts/ThemeContext'
 createRoot(document.getElementById('root')).render(
  <ThemeContextProvider> 
-    <StrictMode>
       <Route />
-    </StrictMode>
-// </ThemeContextProvider>,
+</ThemeContextProvider>,
 )
