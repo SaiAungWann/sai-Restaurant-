@@ -9,7 +9,7 @@ import {FaShoppingCart} from "react-icons/fa"
 export default function Banner() {
   return (
     <>
-    <div className=' gird gird-col-1 sm:gird-col-2 container min-h-[550px] p-14'>
+    <div className=' gird gird-col-1 sm:gird-col-2 container min-h-[350px] pt-14'>
         <div className='sm:flex'
              data-aos="fade-up"
             data-aos-duration="300">

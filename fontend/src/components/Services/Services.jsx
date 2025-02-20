@@ -30,7 +30,7 @@ export default function Services() {
     ]
   return (
     <>
-    <div className=' pt-10'>
+    <div>
         <div className="container">
             {/* Service introduction */}
             <div className="text-center mb-20 max-w-[400px] mx-auto">

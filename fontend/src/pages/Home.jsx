@@ -3,6 +3,7 @@ import Hero from '../components/Hero/Hero'
 import useTheme from '../hooks/useTheme'
 import Services from '../components/Services/Services';
 import Banner from '../components/Banner/Banner';
+import AppStore from '../components/AppStore/AppStore';
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Banner />
+      <AppStore />
     </div>
   )
 }
