@@ -4,6 +4,7 @@ import useTheme from '../hooks/useTheme'
 import Services from '../components/Services/Services';
 import Banner from '../components/Banner/Banner';
 import AppStore from '../components/AppStore/AppStore';
+import Testimonial from '../components/Testimonial/Testimonial';
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Banner />
       <AppStore />
+      <Testimonial />
     </div>
   )
 }

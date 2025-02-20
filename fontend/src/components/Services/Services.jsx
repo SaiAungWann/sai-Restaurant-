@@ -41,7 +41,8 @@ export default function Services() {
             {/* Services Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-5 place-items-center">
                {ServiceDates.map( (service ) => 
-                <div 
+                <div
+                key={service.id} 
                 data-aos="zoom-in"
                 data-aos-duration="300"
                 className=" mt-10 rounded-2xl hover:bg-primary hover:text-white relative group max-w-[300px] shadow-md">

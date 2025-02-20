@@ -66,7 +66,7 @@ export default function Hero() {
                     <div className=" sm:w-fit w-full flex lg:flex-col justify-center items-center bg-white/30  rounded-full bottom-[0px] lg:right-20 lg:mt-2 lg:mb-2 absolute ">
             
                      { images.map((image) => (
-                        <img src={image.img} className=' max-w-[20] h-[40px] object-contain inline-block ml-2 hover:scale-105 duration-200 sm:ml-0 '
+                        <img key={image.id} src={image.img} className=' max-w-[20] h-[40px] object-contain inline-block ml-2 hover:scale-105 duration-200 sm:ml-0 '
                         onClick={ () => {
                             setPreView(
                             image.id ===1? biryani : image.id === 2 ? biryani2 : image.id === 3 ? biryani3 : image.id === 4 ? biryani4 : biryani5
