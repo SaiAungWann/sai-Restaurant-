@@ -47,7 +47,7 @@ export default function Hero() {
   return (
 
     <>
-        <div className={`min-h-[550px] sm:min-h-[600px] bg-white flex justify-between items-center ${ isDark ? 'bg-gray-900 text-white' : ' text-black'}`}
+        <div className={`min-h-[550px] sm:min-h-[600px] bg-white flex justify-between items-center ${ isDark ? 'bg-gray-800 text-white' : ' text-black'}`}
          style={bgImg}>
 
             {/* picture rotation animation */}

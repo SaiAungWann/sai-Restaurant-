@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
    <>
    {/*  dark:bg-gray-800 dark:text-white */}
-      <div className={` shadow-md bg-white text-black duration-200 ${ isDark ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+      <div className={` shadow-md bg-white text-black duration-200 ${ isDark ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
         <div className="container">
           <div className="flex justify-between items-center">
             <div className='p-2'>
